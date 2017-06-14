@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.chat.DressUpActivity">
+
+    <com.example.administrator.chat.view.TitleBar
+        android:id="@+id/tb_dress_up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftBackground="@drawable/returned"
+        app:titleText="Dress Up"
+        app:titleTextSize="5sp"
+        app:titleTextColor="#FFFFFF"
+        app:rightText="完成"
+        app:rightTextSize="5sp"
+        app:rightTextColor="#FFFFFF">
+
+    </com.example.administrator.chat.view.TitleBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose an Avatar"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_margin="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dress_up_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a background"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_margin="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dress_up_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

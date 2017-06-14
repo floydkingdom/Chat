@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.chat.SettingActivity">
+
+    <com.example.administrator.chat.view.TitleBar
+        android:id="@+id/tab_setting"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:leftBackground="@drawable/returned"
+        app:titleText="Setting"
+        app:titleTextSize="5sp"
+        app:titleTextColor="#FFFFFF"
+        app:rightText="完成"
+        app:rightTextSize="5sp"
+        app:rightTextColor="#FFFFFF">
+
+    </com.example.administrator.chat.view.TitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:text="Play Guide Always"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <Switch
+            android:id="@+id/setting_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Remember password"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <Switch
+            android:id="@+id/remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Appear offline"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+        
+        <ImageView
+            android:id="@+id/iv_offline"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btnunselected"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

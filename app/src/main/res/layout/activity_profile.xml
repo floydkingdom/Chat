@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e9e9e9"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.chat.ProfileActivity">
+
+    <com.example.administrator.chat.view.TitleBar
+        android:id="@+id/tab_profile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:leftBackground="@drawable/returned"
+        app:titleText="Profile"
+        app:titleTextSize="5sp"
+        app:titleTextColor="#FFFFFF"
+        app:rightText="完成"
+        app:rightTextSize="5sp"
+        app:rightTextColor="#FFFFFF">
+
+    </com.example.administrator.chat.view.TitleBar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="New Nickname"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="#dcdcdc"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/et_profile_sign"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="New Sign"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="#dcdcdc"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/et_profile_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="New Password"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:background="#dcdcdc"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/et_profile_insure_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Insure Nickname"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="#dcdcdc"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.chat.view.SlideLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/bgdr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#81707070"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingStart="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/avasterdr"/>
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/username"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:text="I am Iron Man!"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <com.example.administrator.chat.view.PicAndTextBtn
+            android:id="@+id/patb_dressup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:pic="@drawable/dress"
+            app:text="Dress up"
+            app:textColor="#000000"
+            app:textSize="8sp">
+
+        </com.example.administrator.chat.view.PicAndTextBtn>
+
+        <com.example.administrator.chat.view.PicAndTextBtn
+            android:id="@+id/patb_profile"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            app:pic="@drawable/profile"
+            app:text="Profile"
+            app:textColor="#000000"
+            app:textSize="8sp">
+
+        </com.example.administrator.chat.view.PicAndTextBtn>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <com.example.administrator.chat.view.PicAndTextBtn
+            android:id="@+id/patb_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            app:pic="@drawable/setting"
+            app:text="Setting"
+            app:textColor="#000000"
+            app:textSize="8sp">
+
+        </com.example.administrator.chat.view.PicAndTextBtn>
+
+        <com.example.administrator.chat.view.PicAndTextBtn
+            android:id="@+id/patb_night"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            app:pic="@drawable/night"
+            app:text="Night"
+            app:textColor="#000000"
+            app:textSize="8sp">
+
+        </com.example.administrator.chat.view.PicAndTextBtn>
+
+    </LinearLayout>
+
+
+</LinearLayout>
