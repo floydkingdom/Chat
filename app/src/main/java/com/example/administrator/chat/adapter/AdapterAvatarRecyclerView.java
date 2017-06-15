@@ -39,6 +39,7 @@ public class AdapterAvatarRecyclerView extends RecyclerView.Adapter<AdapterAvata
     @Override
     public BaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.choose_image,parent,false);
+
         return new BaseViewHolder(view);
     }
 
